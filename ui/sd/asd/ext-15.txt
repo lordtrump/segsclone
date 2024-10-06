@@ -1,1 +1,9 @@
-
+git clone --depth 1 https://github.com/mcmonkeyprojects/sd-dynamic-thresholding 1-sd-dynamic-thresholding
+git clone --depth 1 https://github.com/portu-sim/sd-webui-bmab 3-bmab
+git clone --depth 1 https://github.com/zanllp/sd-webui-infinite-image-browsing
+git clone --depth 1 https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
+git clone --depth 1 https://github.com/Coyote-A/ultimate-upscale-for-automatic1111
+git clone --depth 1 https://github.com/Mikubill/sd-webui-controlnet
+git clone --depth 1 https://github.com/BlafKing/sd-civitai-browser-plus
+git clone --depth 1 https://github.com/gutris1/sd-hub
+git clone --depth 1 https://github.com/gutris1/timer_timer
