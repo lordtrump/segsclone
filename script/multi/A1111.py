@@ -63,7 +63,8 @@ def webui_req():
         f"https://github.com/lordtrump/segsclone/raw/main/script/pinggy.py {WEBUI}",
         f"https://github.com/lordtrump/segsclone/raw/main/script/ngrokk.py {WEBUI}",
         f"https://github.com/lordtrump/segsclone/raw/main/script/venv.py {WEBUI}",
-        f"https://github.com/lordtrump/segsclone/raw/main/script/multi/segsmaker.py {WEBUI}"]
+        f"https://github.com/lordtrump/segsclone/raw/main/script/multi/segsmaker.py {WEBUI}",
+        f"https://github.com/lordtrump/segsclone/raw/main/ui/sd/asd/ext-15.txt {WEBUI}/asd"]
 
     upscalers = [
         f"https://huggingface.co/pantat88/ui/resolve/main/4x-UltraSharp.pth {WEBUI}/models/ESRGAN",
@@ -89,7 +90,8 @@ def sd_15():
     for items in extras:
         download(items)
 
-    get_ipython().system(f"unzip -qo {WEBUI}/embeddings.zip -d {WEBUI}/embeddings && rm {WEBUI}/embeddings.zip")
+    get_ipython().system(f"unzip -q /home/studio-lab-user/A1111/startpack.zip -d /home/studio-lab-user && rm {WEBUI}/startpack.zip")
+    get_ipython().system(f"rm -rf {WEBUI}/models/Lora && rm -rf {WEBUI}/embeddings && cp -r /home/studio-lab-user/ui/models/Lora {WEBUI}/models/Lora && cp -r /home/studio-lab-user/ui/embeddings {WEBUI}/embeddings && rm -rf {WEBUI}/startpack.zip && rm -rf /home/studio-lab-user/ui")
 
     say("<br><b>【{red} Installing Extensions{d} 】{red}</b>")
     os.chdir(WEBUI / "extensions")
