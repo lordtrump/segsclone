@@ -6,4 +6,5 @@ git clone --depth 1 https://github.com/Coyote-A/ultimate-upscale-for-automatic11
 git clone --depth 1 https://github.com/Mikubill/sd-webui-controlnet
 git clone --depth 1 https://github.com/BlafKing/sd-civitai-browser-plus
 git clone --depth 1 https://github.com/gutris1/sd-hub
+git clone --depth 1 https://github.com/adieyal/sd-dynamic-prompts
 git clone --depth 1 https://github.com/gutris1/timer_timer
