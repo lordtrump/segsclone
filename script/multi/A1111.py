@@ -47,7 +47,7 @@ def req_list():
 
 def webui_req():
     time.sleep(1)
-    pull(f"https://github.com/gutris1/segsmaker sd {WEBUI}")
+    pull(f"https://github.com/lordtrump/segsclone sd {WEBUI}")
 
     tmp_cleaning()
 
