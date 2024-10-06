@@ -92,6 +92,7 @@ def sd_15():
 
     get_ipython().system(f"unzip -q /home/studio-lab-user/A1111/startpack.zip -d /home/studio-lab-user && rm {WEBUI}/startpack.zip")
     get_ipython().system(f"rm -rf {WEBUI}/models/Lora && rm -rf {WEBUI}/embeddings && cp -r /home/studio-lab-user/ui/models/Lora {WEBUI}/models/Lora && cp -r /home/studio-lab-user/ui/embeddings {WEBUI}/embeddings && rm -rf {WEBUI}/startpack.zip && rm -rf /home/studio-lab-user/ui")
+    get_ipython().system(f"git clone -q https://github.com/lordtrump/wildcards {WEBUI}/extensions/sd-dynamic-prompts/wildcards")
 
     say("<br><b>【{red} Installing Extensions{d} 】{red}</b>")
     os.chdir(WEBUI / "extensions")
